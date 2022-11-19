@@ -1,0 +1,184 @@
+/*css reset*/
+* {
+      margin: 0;
+      padding: 0;
+}
+
+body {
+      content: "";
+      position: absolute;
+      background-image: url('pizza1.jpg');
+      background-size: cover;
+      /* image purna yechat distrubute hote*/
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.9;
+}
+
+
+
+/* navigation bar*/
+#navbar {
+      display: flex;
+      /*flex ek line may karta */
+      align-items: center;
+      /* opacity: 0.6; */
+}
+
+#navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.7;
+}
+
+/* Navigation  bar ke leye :logo and image*/
+#logo {
+      opacity: 1;
+}
+
+#log img {
+      height: 50px;
+      margin: 40px;
+}
+
+/*Navigation bar ko styling */
+#navbar {
+      position: relative;
+      /*position relative se background 
+      sab ek he line may set hota jaise navigation bar dekhta}*/
+}
+
+#navbar ul {
+      display: flex;
+      padding: 30px;
+}
+
+#navbar ul li {
+      list-style: none;
+      font-size: 2rem;
+}
+
+#navbar ul li a {
+      color: whitesmoke;
+
+      font-size: 2rem;
+      padding: 22px;
+      text-decoration: none;
+      border-radius: 70px;
+}
+
+#navbar ul li a:hover{
+      /* hover se button circle may dekta*/
+      color: black;
+      background-color: orange;
+
+}
+
+/*home section*/
+.content {
+      display: inline;
+      position: absolute;
+      /* flex-direction: column;saare ek ke niche ek line may aate hai */
+      align-items: center;
+      justify-content: center;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      /* padding-top: 80px; */
+      /* height: 500px; */
+}
+
+#home h1 {
+      color: white;
+}
+
+#home p {
+      color: white;
+      font-size: 1.5rem;
+}
+
+
+
+
+
+/* heading ke leye style*/
+.aadi {
+      text-align: center;
+      font-size: 3.8rem;
+      padding: 15px;
+}
+
+.aadi1 {
+      text-align: center;
+      font-size: 2.8rem;
+      padding: 15px;
+}
+
+.button {
+      color: whitesmoke;
+      padding: 7px 10px;
+      width: 140px;
+      background-color: brown;
+      margin: 3% 45%;
+      justify-content: center;
+      font-size: 1.5rem;
+      border: solid whitesmoke;
+      border-radius: 17px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      margin-left: 250px;
+      /* agr arrow leke jayenge toh clickable honga*/
+}
+
+.menu {
+      height: 60%;
+      width: 50%;
+      background-color: aliceblue;     
+}
+
+.txt {
+      color: #d53f3f;
+}
+.item1{
+      margin-top: 300px;
+      text-shadow: 20px;
+}
+.item2{
+      color: white;
+      font-size:160px;
+      font-weight: 200rem;
+      padding-right: 150px;
+      text-shadow: 100%;
+      border-color: black;
+}
+.item4{
+      font: weight 100rem;
+      color: white;
+}
+.padding{
+      padding-left: 90px;
+}    
+.aadi {
+      font-size: 70px;
+      color: #ffffff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                     0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+      }
+      to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+                     0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }  
